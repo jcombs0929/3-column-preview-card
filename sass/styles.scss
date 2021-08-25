@@ -1,0 +1,95 @@
+@import './mixins';
+
+* {
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 2rem;
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+    line-height: 1.8;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', sans-serif;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: $very-light-gray;
+}
+
+.btn {
+    display: block;
+    background-color: $very-light-gray;
+    padding: 14px 34px;
+    width: max-content;
+    border-radius: 50px;
+    font-size: 14px;
+    text-decoration: none;
+    transition: .2s all ease-in-out;
+
+    &:hover {
+        background-color: $transparent-white;
+    }
+}
+
+.car {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 2.5rem;
+    color: $transparent-white;
+    // height: min-content;
+    min-height: 55vh;
+
+
+    .icon {
+        display: block;
+        width: 100%;
+        height: 40px;
+    }
+
+    &.sedans {
+        background-color: $bright-orange;
+        .icon__sedan {
+            background: url(../images/icon-sedans.svg) no-repeat;
+        }
+        .learn-more { color: $bright-orange; }
+    }
+
+    &.suvs {
+        background-color: $dark-cyan;
+        .icon__suv {
+            background: url(../images/icon-suvs.svg) no-repeat;
+        }
+        .learn-more { color: $dark-cyan; }
+        
+    }
+
+    &.luxury {
+        background-color: $very-dark-cyan;
+        .icon__luxury {
+            background: url(../images/icon-luxury.svg) no-repeat;
+        }
+        .learn-more { color: $very-dark-cyan; }
+        
+    }
+
+}
+.attribution, .attribution a {
+    font-size: 10px;
+    color: $dark-cyan;
+    text-align: center;
+    margin-top: 1rem;
+}
