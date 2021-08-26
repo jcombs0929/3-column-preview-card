@@ -10,16 +10,31 @@
 body {
     padding: 2rem;
     font-family: 'Lexend Deca', sans-serif;
+    background-color: $very-light-gray;
+    
+    @media (min-width: $desktop) {
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 main {
     display: flex;
     flex-direction: column;
-    max-width: 400px;
+    max-width: 350px;
     margin: 0 auto;
     line-height: 1.8;
     border-radius: 10px;
     overflow: hidden;
+
+    @media (min-width: $desktop) {
+        flex-direction: initial;
+        max-width: 1000px;
+        border-radius: 10px;
+        min-height: 60vh;
+    }
 }
 
 h1 {
@@ -32,8 +47,9 @@ h1 {
 .btn {
     display: block;
     background-color: $very-light-gray;
-    padding: 14px 34px;
+    padding: 10px 34px;
     width: max-content;
+    margin-top: 15%;
     border-radius: 50px;
     font-size: 14px;
     text-decoration: none;
@@ -42,16 +58,28 @@ h1 {
     &:hover {
         background-color: $transparent-white;
     }
+
+    @media (min-width: $desktop) {
+        margin-top: 35%;
+    }
 }
 
 .car {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding: 2.5rem;
+    padding: 3.5rem;
     color: $transparent-white;
     // height: min-content;
-    min-height: 55vh;
+    // width: 350px;
+    min-height: 50vh;
+    width: 100%;
+
+    @media (min-width: $desktop) {
+        width: max-content;
+        padding: 3.5rem;
+        // min-height: 60vh;
+    }
 
 
     .icon {
