@@ -36,10 +36,10 @@ main {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  max-width: 350px;
+  max-width: 24rem;
   margin: 0 auto;
   line-height: 1.8;
-  border-radius: 10px;
+  border-radius: 1rem;
   overflow: hidden;
 }
 
@@ -49,8 +49,8 @@ main {
     -webkit-box-direction: initial;
         -ms-flex-direction: initial;
             flex-direction: initial;
-    max-width: 1000px;
-    border-radius: 10px;
+    max-width: 66rem;
+    border-radius: 1rem;
     min-height: 60vh;
   }
 }
@@ -65,13 +65,13 @@ h1 {
 .btn {
   display: block;
   background-color: #f2f2f2;
-  padding: 10px 34px;
+  padding: 1rem 2.25rem;
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
   margin-top: 15%;
-  border-radius: 50px;
-  font-size: 14px;
+  border-radius: 3.4rem;
+  font-size: .9rem;
   text-decoration: none;
   -webkit-transition: .2s all ease-in-out;
   transition: .2s all ease-in-out;
@@ -116,7 +116,7 @@ h1 {
 .car .icon {
   display: block;
   width: 100%;
-  height: 40px;
+  height: 2.7rem;
 }
 
 .car.sedans {
@@ -156,7 +156,7 @@ h1 {
 }
 
 .attribution, .attribution a {
-  font-size: 10px;
+  font-size: .7rem;
   color: #006970;
   text-align: center;
   margin-top: 1rem;
